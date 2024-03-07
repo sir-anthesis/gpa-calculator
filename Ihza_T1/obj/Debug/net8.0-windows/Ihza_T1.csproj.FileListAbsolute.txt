@@ -1,0 +1,16 @@
+C:\Users\User\source\repos\Ihza_T1\Ihza_T1\bin\Debug\net8.0-windows\Ihza_T1.exe
+C:\Users\User\source\repos\Ihza_T1\Ihza_T1\bin\Debug\net8.0-windows\Ihza_T1.deps.json
+C:\Users\User\source\repos\Ihza_T1\Ihza_T1\bin\Debug\net8.0-windows\Ihza_T1.runtimeconfig.json
+C:\Users\User\source\repos\Ihza_T1\Ihza_T1\bin\Debug\net8.0-windows\Ihza_T1.dll
+C:\Users\User\source\repos\Ihza_T1\Ihza_T1\bin\Debug\net8.0-windows\Ihza_T1.pdb
+C:\Users\User\source\repos\Ihza_T1\Ihza_T1\obj\Debug\net8.0-windows\Ihza_T1.Form1.resources
+C:\Users\User\source\repos\Ihza_T1\Ihza_T1\obj\Debug\net8.0-windows\Ihza_T1.csproj.GenerateResource.cache
+C:\Users\User\source\repos\Ihza_T1\Ihza_T1\obj\Debug\net8.0-windows\Ihza_T1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\Ihza_T1\Ihza_T1\obj\Debug\net8.0-windows\Ihza_T1.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Ihza_T1\Ihza_T1\obj\Debug\net8.0-windows\Ihza_T1.AssemblyInfo.cs
+C:\Users\User\source\repos\Ihza_T1\Ihza_T1\obj\Debug\net8.0-windows\Ihza_T1.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Ihza_T1\Ihza_T1\obj\Debug\net8.0-windows\Ihza_T1.dll
+C:\Users\User\source\repos\Ihza_T1\Ihza_T1\obj\Debug\net8.0-windows\refint\Ihza_T1.dll
+C:\Users\User\source\repos\Ihza_T1\Ihza_T1\obj\Debug\net8.0-windows\Ihza_T1.pdb
+C:\Users\User\source\repos\Ihza_T1\Ihza_T1\obj\Debug\net8.0-windows\Ihza_T1.genruntimeconfig.cache
+C:\Users\User\source\repos\Ihza_T1\Ihza_T1\obj\Debug\net8.0-windows\ref\Ihza_T1.dll
