@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ihza_T1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2fcb63f4af7ec2b3acfcb446501e9886c6706e47")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ihza_T1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ihza_T1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

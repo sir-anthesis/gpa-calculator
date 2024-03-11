@@ -14,3 +14,4 @@ C:\Users\User\source\repos\Ihza_T1\Ihza_T1\obj\Debug\net8.0-windows\refint\Ihza_
 C:\Users\User\source\repos\Ihza_T1\Ihza_T1\obj\Debug\net8.0-windows\Ihza_T1.pdb
 C:\Users\User\source\repos\Ihza_T1\Ihza_T1\obj\Debug\net8.0-windows\Ihza_T1.genruntimeconfig.cache
 C:\Users\User\source\repos\Ihza_T1\Ihza_T1\obj\Debug\net8.0-windows\ref\Ihza_T1.dll
+C:\Users\User\source\repos\Ihza_T1\Ihza_T1\obj\Debug\net8.0-windows\Ihza_T1.sourcelink.json

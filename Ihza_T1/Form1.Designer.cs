@@ -41,12 +41,12 @@ namespace Ihza_T1
             lbresult = new Label();
             label6 = new Label();
             lbgrade = new Label();
-            nucredit = new NumericUpDown();
+            nucv = new NumericUpDown();
             label7 = new Label();
             btgpa = new Button();
             ((System.ComponentModel.ISupportInitialize)nutest).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nuassign).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)nucredit).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nucv).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -137,7 +137,7 @@ namespace Ihza_T1
             // lbresult
             // 
             lbresult.AutoSize = true;
-            lbresult.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbresult.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbresult.Location = new Point(158, 306);
             lbresult.Name = "lbresult";
             lbresult.Size = new Size(0, 21);
@@ -156,25 +156,25 @@ namespace Ihza_T1
             // lbgrade
             // 
             lbgrade.AutoSize = true;
-            lbgrade.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbgrade.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbgrade.Location = new Point(403, 306);
             lbgrade.Name = "lbgrade";
             lbgrade.Size = new Size(0, 21);
             lbgrade.TabIndex = 11;
             // 
-            // nucredit
+            // nucv
             // 
-            nucredit.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            nucredit.Location = new Point(241, 222);
-            nucredit.Name = "nucredit";
-            nucredit.Size = new Size(214, 29);
-            nucredit.TabIndex = 13;
+            nucv.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            nucv.Location = new Point(241, 222);
+            nucv.Name = "nucv";
+            nucv.Size = new Size(214, 29);
+            nucv.TabIndex = 13;
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(64, 230);
+            label7.Location = new Point(65, 224);
             label7.Name = "label7";
             label7.Size = new Size(94, 21);
             label7.TabIndex = 12;
@@ -189,6 +189,7 @@ namespace Ihza_T1
             btgpa.TabIndex = 14;
             btgpa.Text = "GPA";
             btgpa.UseVisualStyleBackColor = true;
+            btgpa.Click += btgpa_Click;
             // 
             // Form1
             // 
@@ -196,7 +197,7 @@ namespace Ihza_T1
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(518, 446);
             Controls.Add(btgpa);
-            Controls.Add(nucredit);
+            Controls.Add(nucv);
             Controls.Add(label7);
             Controls.Add(lbgrade);
             Controls.Add(label6);
@@ -214,7 +215,7 @@ namespace Ihza_T1
             Text = "Menghitung Nilai Akhir - Ihza";
             ((System.ComponentModel.ISupportInitialize)nutest).EndInit();
             ((System.ComponentModel.ISupportInitialize)nuassign).EndInit();
-            ((System.ComponentModel.ISupportInitialize)nucredit).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nucv).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -238,7 +239,7 @@ namespace Ihza_T1
         private Label lbresult;
         private Label label6;
         private Label lbgrade;
-        private NumericUpDown nucredit;
+        private NumericUpDown nucv;
         private Label label7;
         private Button btgpa;
     }

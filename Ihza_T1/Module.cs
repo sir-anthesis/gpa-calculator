@@ -11,6 +11,7 @@ namespace Ihza_T1
         public string module_name;
         public double module_test;
         public double assignment;
+        public double credit_value;
         public double result;
         public string grade;
 
