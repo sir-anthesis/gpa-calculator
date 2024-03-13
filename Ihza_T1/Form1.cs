@@ -2,12 +2,7 @@ namespace Ihza_T1
 {
     public partial class Form1 : Form
     {
-        Module obj = new Module();
-        string[] nama = new string[3];
-        double[] test = new double[3];
-        double[] assignment = new double[3];
-        double[] credit = new double[3];
-        double[] grade_value = new double[3];
+        Module[] obj = new Module[3];
         int i;
         double gpa;
         public Form1()
@@ -17,12 +12,7 @@ namespace Ihza_T1
 
         private void btsubmit_Click(object sender, EventArgs e)
         {
-            obj.module_name = txmodule.Text;
-            obj.module_test = Convert.ToDouble(nutest.Value);
-            obj.assignment = Convert.ToDouble(nuassign.Value);
-            obj.credit_value = Convert.ToDouble(nucv.Value);
-
-            if (obj.module_name == "")
+            if (txmodule.Text == "")
             {
                 MessageBox.Show("Nama Module Tidak Boleh Kosong");
             }
@@ -30,48 +20,49 @@ namespace Ihza_T1
             {
                 if (i < 3)
                 {
-                    nama[i] = obj.module_name;
-                    test[i] = obj.module_test;
-                    assignment[i] = obj.assignment;
-                    credit[i] = obj.credit_value;
+                    obj[i] = new Module();
+                    obj[i].module_name = txmodule.Text;
+                    obj[i].module_test = Convert.ToDouble(nutest.Value);
+                    obj[i].assignment = Convert.ToDouble(nuassign.Value);
+                    obj[i].credit_value = Convert.ToDouble(nucv.Value);
 
-                    lbresult.Text = obj.Calculate().ToString();
+                    lbresult.Text = obj[i].Calculate().ToString();
                     lbgrade.ForeColor = Color.Green;
                     lbresult.ForeColor = Color.Green;
-                    if (obj.result >= 80)
+                    if (obj[i].result >= 80)
                     {
                         lbgrade.Text = "A";
-                        obj.grade = "A";
-                        grade_value[i] = 4;
+                        obj[i].grade = "A";
+                        obj[i].grade_value = 4;
                     }
-                    else if (obj.result >= 70)
+                    else if (obj[i].result >= 70)
                     {
                         lbgrade.Text = "B";
-                        obj.grade = "B";
-                        grade_value[i] = 3;
+                        obj[i].grade = "B";
+                        obj[i].grade_value = 3;
                     }
-                    else if (obj.result >= 60)
+                    else if (obj[i].result >= 60)
                     {
                         lbgrade.Text = "C";
-                        obj.grade = "C";
-                        grade_value[i] = 2;
+                        obj[i].grade = "C";
+                        obj[i].grade_value = 2;
                     }
-                    else if (obj.result >= 50)
+                    else if (obj[i].result >= 50)
                     {
                         lbgrade.Text = "D";
-                        obj.grade = "D";
-                        grade_value[i] = 1;
+                        obj[i].grade = "D";
+                        obj[i].grade_value = 1;
                     }
                     else
                     {
                         lbgrade.Text = "E";
-                        obj.grade = "E";
-                        grade_value[i] = 0;
+                        obj[i].grade = "E";
+                        obj[i].grade_value = 0;
                         lbgrade.ForeColor = Color.Red;
                         lbresult.ForeColor = Color.Red;
                     }
 
-                    switch (obj.grade)
+                    switch (obj[i].grade)
                     {
                         case "A":
                             MessageBox.Show("Excelent");
@@ -101,9 +92,9 @@ namespace Ihza_T1
         private double getTotalCredit()
         {
             double total = 0;
-            foreach (double C in credit)
+            foreach (Module mod in obj)
             {
-                total += C;
+                total += mod.credit_value;
             }
             return total;
         }
@@ -111,9 +102,9 @@ namespace Ihza_T1
         private double getTotalGV()
         {
             double total = 0;
-            for (int j = 0; j < credit.Length; j++)
+            for (int j = 0; j < 3; j++)
             {
-                total += credit[j] * grade_value[j];
+                total += obj[j].credit_value * obj[j].grade_value;
             }
             return total;
         }

@@ -14,6 +14,7 @@ namespace Ihza_T1
         public double credit_value;
         public double result;
         public string grade;
+        public double grade_value;
 
         public double Calculate()
         {
